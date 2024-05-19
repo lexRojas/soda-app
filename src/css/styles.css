@@ -22,7 +22,7 @@ body {
 
 .logo {
   display: flex;
-  flex: 4 0 350px;
+  flex: 4 1 350px;
   padding: 10px;
   justify-content: center;
 
@@ -46,7 +46,7 @@ body {
 
 
 .menu {
-  flex: 1 0 100px;
+  flex: 1 1 100px;
   background-color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
