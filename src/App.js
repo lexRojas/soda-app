@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import CardsContent from './components/CardsContent';
+import Logo from './components/Logo';
+import Menu from './components/Menu';
+import Pie from './components/Pie';
+import './css/styles.css'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="encabezado">
+        <div className="logo">
+          <Logo/>
+        </div>
+        <div className="menu">
+          <Menu/>
+        </div>
       </header>
+      <main className="contenedor-principal">
+        <CardsContent/>
+
+      </main>
+      <footer className="pie">
+        <Pie/>
+        </footer> 
     </div>
   );
 }
