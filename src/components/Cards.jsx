@@ -5,7 +5,7 @@ import plato from '../images/plato1.png'
 const Cards = () => {
   return (
     <div className="card">
-        <p class="cardHeading">Bigoron de costilla ahumada </p>
+        <p class="cardHeading">Vigorón de costilla ahumada </p>
         <img src={plato} alt="plato 1" />
         <button class="acceptButton">Ver mas</button>
       </div>
