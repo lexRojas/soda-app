@@ -32,8 +32,8 @@ body {
 
 .logo>img {
     align-self: center;
-    height: 100%;
-    width: 100%;
+    height: inherit;
+    width: inherit;
 }
 
 @media (min-width: 500px) {
