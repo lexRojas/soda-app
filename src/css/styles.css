@@ -38,7 +38,7 @@ body {
   width: auto;
 }
 
-@media (min-width: 500px) {
+@media (width <=500px) {
   .logo > img {
     height: 70%;
     width: auto;
@@ -64,7 +64,7 @@ body {
   border: none;
   font: inherit;
   color: #e8e8e8;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   border-radius: 50px;
   cursor: not-allowed;
