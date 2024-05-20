@@ -88,6 +88,10 @@ body {
   align-items: center;
 }
 
+.button>a{
+  text-decoration: none;
+}
+
 .button:hover {
   animation: shake 0.2s linear 1;
 }
