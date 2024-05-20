@@ -117,11 +117,15 @@ body {
 
 .contenedor-principal {
   grid-area: "contenido";
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(0, 0, 0);
 }
 
 .pie {
   grid-area: "pie";
+  background-color: black;
 }
 
 #background-video {

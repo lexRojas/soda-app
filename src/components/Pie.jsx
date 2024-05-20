@@ -9,9 +9,9 @@ const Pie = () => {
         <source src={video} type="video/mp4" />
       </video>
 
-      <p>Proyecto Aromas y Sabores</p>
+      <p>Proyecto Aromas y Sabores &#174;</p>
       <p>Pertenece a:</p>
-      <p>Andres Salazar Salazar & Jessica xxxxx xxxxxx</p>
+      <p>Andres Salazar Salazar & Jessica Avila Escalante</p>
       <p>Cariari Pococí Limón</p>
     </div>
   );
