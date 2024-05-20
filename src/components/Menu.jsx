@@ -8,7 +8,7 @@ const Menu = () => {
     <div>
       <div class="button">
         {/* <span>Ordenar !</span>         */}
-        <a href={hreftWS}   target="_blank"> Ordenar !</a>
+        <a href={hreftWS}   target="_blank" rel="noreferrer"> Ordenar !</a>
 
       </div>
     </div>
