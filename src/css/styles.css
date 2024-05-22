@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: blanchedalmond;
   box-sizing: border-box;
 }
 
@@ -10,43 +9,36 @@ body {
   display: grid;
   grid-template-areas:
     "encabezado"
-    "contenido contenido"
-    "pie pie";
+    "contenido"
+    "pie";
 
   grid-template-rows: 1rem, 100vh, 0.4rem;
 }
 
 .encabezado {
+  grid-area: encabezado;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
 .logo {
   display: flex;
-  flex: 4 1 79%;
-  padding: 10px;
+  flex: 1 1 300px;
   justify-content: center;
-
+  align-items: center;
   background-color: rgb(0, 0, 0);
-  color: bisque;
+
 }
 
 .logo > img {
   align-self: center;
   aspect-ratio: 1/1; 
-  height: auto;
-  width: auto;
-}
-
-@media (width <=500px) {
-  .logo > img {
-    height: 70%;
-    width: auto;
-  }
+  object-fit: contain;
 }
 
 .menu {
-  flex: 1 1 19%;
+  flex: 1 1 150px;
   background-color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
