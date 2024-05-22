@@ -8,6 +8,9 @@ const CardsContent = () => {
         <div className='card-content'> 
         
             <Cards/>
+            <Cards/>
+            <Cards/>
+            <Cards/>
 
 
         </div>
