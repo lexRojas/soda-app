@@ -58,6 +58,9 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   border-radius: 50px;
+  border-color: white;
+  border-width: 2px;
+  border: solid;
   cursor: not-allowed;
   overflow: hidden;
   transition: all 0.3s ease cubic-bezier(0.23, 1, 0.32, 1);
