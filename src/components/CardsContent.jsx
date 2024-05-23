@@ -7,11 +7,8 @@ const CardsContent = () => {
         <p>Menu del día</p>
         <div className='card-content'> 
         
-            <Cards/>
-            <Cards/>
-            <Cards/>
-            <Cards/>
-
+            <Cards foto='plato2'/>
+            <Cards foto='plato1'/>
 
         </div>
     </div>
