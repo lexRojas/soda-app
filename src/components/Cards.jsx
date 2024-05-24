@@ -16,7 +16,7 @@ const Cards = (props) => {
   
   }
   
-  const {foto , titulo} = props
+  const {foto , titulo, plato_del_dia} = props
 
 
     console.log(foto)
@@ -25,13 +25,14 @@ const Cards = (props) => {
     return (
     <div className="card">
         <p className="cardHeading">{titulo} </p>
+        {plato_del_dia? <p className="cardSubHeading">PLATO DEL DIA </p>:<></>}
         <img src={platosID(`./${foto}.png`)} alt={foto} />
-        <button 
+        {/* <button 
           className="acceptButton" 
           onClick={vermas}
         >Ver mas</button>
 
-        {visible?<Dialog/>:<></>}
+        {visible?<Dialog/>:<></>} */}
 
 
       </div>

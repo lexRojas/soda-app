@@ -179,9 +179,9 @@ body {
   background: linear-gradient(to right, rgb(137, 104, 255), rgb(175, 152, 255));
   display: flex;
 
-  gap: 20px;
-  padding: 20px;
-  margin: 10px;
+  gap: 1px;
+  padding: 10px;
+  margin: 5px;
   position: relative;
   overflow: hidden;
 }
@@ -210,8 +210,20 @@ body {
 .cardHeading {
   font-size: 1.5em;
   font-weight: 600;
+  height: 20px;
   color: rgb(241, 241, 241);
   z-index: 2;
+  padding: 0;
+}
+
+.cardSubHeading{
+  padding: 0;
+  height: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  color: #fbff00;
+  font-size: 2rem;
+  animation: animate 1.5s linear infinite; 
 }
 
 .cardDescription {
@@ -255,3 +267,20 @@ body {
 
 }
 
+
+
+
+@keyframes animate{ 
+  0%{ 
+    /* opacity: 0;  */
+    color: red
+  } 
+  50%{ 
+    /* opacity: 0.7;  */
+    color: yellow
+  } 
+  100%{ 
+    /* opacity: 0;  */
+    color: #ff7b00;
+  } 
+} 
