@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Dialog from "./Dialog";
+
 
 
 const platosID = require.context('../images/platos',true); 
@@ -10,6 +10,7 @@ const platosID = require.context('../images/platos',true);
 const Cards = (props) => {
   const [visible, setVisible] = useState(false)
 
+// eslint-disable-next-line
   const vermas = () =>{
     setVisible(!visible)
     console.log(visible)
