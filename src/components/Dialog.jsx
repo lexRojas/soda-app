@@ -2,7 +2,13 @@ import React from "react";
 
 const Dialog = (props) => {
 
-const {DialogoAbierto } = props;
+const {DialogoAbierto , setDialogoAbierto} = props;
+
+const cerrar = () => {
+  setDialogoAbierto(false)
+}
+
+
 
  if (DialogoAbierto) {
    return (
@@ -17,7 +23,7 @@ const {DialogoAbierto } = props;
         <p>FFk geqlrgrlo r gerggergekrgeg</p>
         <p>FFk geqlrgrlo r gerggergekrgeg</p>
         <div>
-        <button> Cerrar </button>
+        <button onClick={cerrar}> Cerrar </button>
       </div>
       </div>
       
