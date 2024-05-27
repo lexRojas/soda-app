@@ -278,14 +278,10 @@ body {
   flex-direction: column;
   padding: 1rem;
   
-
-
-  border:  0.3rem solid rgb(65, 26, 0);
-  border-radius: 5%;
-  background-color: rgba(252, 200, 158, 0.884);
+ 
   color: #ff7b00;
 
-
+  backdrop-filter: blur(2px); background-color: rgba(255, 255, 255, 1); border-radius: 35px; box-shadow: 35px 35px 68px 0px rgba(0, 0, 0, 0.5), inset -4px -4px 16px 0px rgba(0, 0, 0, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
 
