@@ -16,7 +16,7 @@ body {
 }
 
 .encabezado {
-  grid-area: encabezado;
+  grid-area: 'encabezado';
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -262,29 +262,111 @@ body {
 
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   
 }
 
 .dialogo{
-
   flex: 0 1 400px;
   height: fit-content;
   z-index: 999;
-
-  align-self: center;
-  
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  
- 
-  color: #ff7b00;
-
-  backdrop-filter: blur(2px); background-color: rgba(255, 255, 255, 1); border-radius: 35px; box-shadow: 35px 35px 68px 0px rgba(0, 0, 0, 0.5), inset -4px -4px 16px 0px rgba(0, 0, 0, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+  padding: 3px;
+  backdrop-filter: blur(2px); background-color: rgba(255, 255, 255, 1); border-radius: 15px; box-shadow: 35px 35px 68px 0px rgba(0, 0, 0, 0.5), inset -4px -4px 16px 0px rgba(0, 0, 0, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
 
+.dialogo-encabezado{
+  display: flex;
+  height: 50px;
+  border-radius: 15px 15px 0 0;
+  border-bottom: solid 1px grey;
+  background: linear-gradient(0deg, rgb(1, 23, 56) 40%, rgb(47, 78, 107) 100% );
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  font-size: x-large;
+  color: rgb(255, 238, 0);
+
+
+}
+
+.dialogo-cuerpo{
+  
+  display: grid;
+  grid-template-areas: 'digito boton-mas' 
+                       'digito boton-menos'
+                       'nombre nombre'
+                       'direccion direccion';
+
+  grid-template-rows: 5rem 5rem 3rem auto;
+  
+  
+  color: #ff7b00;
+
+}
+
+
+#digito{
+  grid-area: digito;
+  font-size: 5rem;
+}
+
+#boton-mas{
+
+  grid-area: boton-mas;
+  font-size: 5rem;
+
+}
+
+
+#boton-menos{
+
+  grid-area: boton-menos;
+  font-size: 5rem;
+
+}
+
+#nombre{
+
+  grid-area: nombre;
+
+}
+
+#direccion{
+  grid-area: direccion;
+
+}
+
+.dialogo-botones{
+
+  display: flex;
+  height: 50px;
+  border-radius: 0 0 15px 15px ;
+  border-top: solid 1px grey;
+  background: linear-gradient(180deg, rgb(1, 23, 56) 40%, rgb(47, 78, 107) 100% );
+  
+
+  align-content: center;
+  justify-content: center;
+  
+}
+
+
+.dialogo-botones>button{
+  margin: 5px;
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 15px;
+  background-color: #ff7b00;
+  border: solid 2px white;
+
+}
+
+.dialogo-botones>button:hover{
+  animation: shake 0.2s linear 1;
+}
 
 
 @keyframes animate{ 

@@ -14,15 +14,21 @@ const cerrar = () => {
    return (
     <div className="dialogo-container">
       <div className="dialogo">
-        <h1>Titulo</h1>
-        <p>FFk geqlrgrlo r gerggergekrgeg</p>
-        <p>FFk geqlrgrlo r gerggergekrgeg</p>
-        <p>FFk geqlrgrlo r gerggergekrgeg</p>
-        <p>FFk geqlrgrlo r gerggergekrgeg</p>
-        <p>FFk geqlrgrlo r gerggergekrgeg</p>
-        <p>FFk geqlrgrlo r gerggergekrgeg</p>
-        <p>FFk geqlrgrlo r gerggergekrgeg</p>
-        <div>
+        <div className="dialogo-encabezado">
+          <span>Detalle de tu orden</span>
+        </div>
+        <div className="dialogo-cuerpo">
+
+                <span id="digito">0</span>
+
+                <button id='boton-mas'>+</button>
+                <button id='boton-menos'>-</button>
+
+                <input id='nombre' type="text" placeholder="Digite su nombre"/>
+                <input id='direccion' type="text" placeholder="Digite su dirección"/>
+
+        </div>
+        <div className="dialogo-botones">
         <button onClick={cerrar}> Cerrar </button>
       </div>
       </div>
