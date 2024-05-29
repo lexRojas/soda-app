@@ -13,7 +13,7 @@ const Dialog = (props) => {
   function construirMensajeWS(name, address) {
     let texto = "";
 
-
+//consrtruye mensaje de wasap 
     texto = "*DETALLE DE LA ORDEN:* "  ;
     texto += " \n";
     texto += "\t Plato: " + menu + " \n";
