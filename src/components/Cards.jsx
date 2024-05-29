@@ -8,20 +8,20 @@ const platosID = require.context('../images/platos',true);
 
 const Cards = (props) => {
 
+  const { DialogoAbierto,setDialogoAbierto,setMenu, foto , titulo, plato_del_dia} = props
 
   const vermas = () =>{
 
     if(!DialogoAbierto){
       setDialogoAbierto(true);  
+      setMenu(titulo);
     }
   }
   
-  const { DialogoAbierto,setDialogoAbierto, foto , titulo, plato_del_dia} = props
+  
 
 
-    console.log(foto)
-    console.log(`./${foto}.png`)
-    console.log(platosID)
+
     return (
     <div className="card">
         <p className="cardHeading">{titulo} </p>
@@ -30,7 +30,7 @@ const Cards = (props) => {
         <button 
           className="acceptButton" 
           onClick={vermas}
-        >Ver mas</button>
+        >Ordenar</button>
       </div>
   );
 };

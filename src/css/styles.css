@@ -322,14 +322,12 @@ body {
 
   grid-area: boton-mas;
   font-size: 5rem;
-  background: none;
-  border: none;
   align-self: center;
-  font-size: 7rem;
+  text-align: center;
 }
 
 #boton-mas:hover{
-  color: #ff7b00;
+  color: #1916d1;
 }
 
 
@@ -337,14 +335,12 @@ body {
 
   grid-area: boton-menos;
   font-size: 5rem;
-  background: none;
-  border: none;
   align-self: center;
-  font-size: 10rem;
+  text-align: center;
 
 }
 #boton-menos:hover{
-  color: #ff7b00;
+  color: #1916d1;
 }
 
 #nombre{
