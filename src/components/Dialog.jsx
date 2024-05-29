@@ -29,6 +29,7 @@ const cerrar = () => {
 
         </div>
         <div className="dialogo-botones">
+        <button onClick={cerrar}> Ordenar </button>
         <button onClick={cerrar}> Cerrar </button>
       </div>
       </div>
